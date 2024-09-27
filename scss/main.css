@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-size: 100%;
+  background-image: url(../images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 426px) {
+  body {
+    margin-block: 4rem;
+  }
+}
+body .slideshow-container {
+  max-width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 426px) {
+  body .slideshow-container {
+    width: 80%;
+  }
+}
+body .mySlides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 426px) {
+  body .mySlides {
+    flex-direction: column-reverse;
+    gap: 6rem;
+  }
+}
+body .mySlides .description-info {
+  width: 40%;
+  font-size: 32px;
+}
+@media screen and (max-width: 426px) {
+  body .mySlides .description-info {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+body .mySlides .description-info img {
+  position: absolute;
+  top: 65px;
+  left: 300px;
+}
+@media screen and (max-width: 426px) {
+  body .mySlides .description-info img {
+    top: 320px;
+    left: 100px;
+    height: 65px;
+    width: 70px;
+  }
+}
+body .mySlides .description-info .sub-info {
+  margin-bottom: 1.5rem;
+}
+body .mySlides .description-info .emp-info {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 426px) {
+  body .mySlides .description-info .emp-info {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+body .mySlides .description-info .emp-info .emp-name {
+  font-weight: 700;
+}
+body .mySlides .description-info .emp-info .work-field {
+  font-weight: 300;
+  color: gray;
+}
+body .mySlides .description-info .inner-paragraph1, body .mySlides .description-info .inner-paragraph2 {
+  transition: opacity 0.5s ease-in-out;
+}
+body .mySlides .image {
+  width: 540px;
+  height: 540px;
+  margin-left: -50px;
+  z-index: -1;
+  align-self: center;
+}
+@media screen and (max-width: 426px) {
+  body .mySlides .image {
+    margin-left: 0;
+    height: auto;
+    width: 265px;
+    height: 265px;
+  }
+}
+body .mySlides .image .bg-image {
+  position: absolute;
+  z-index: -1;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 426px) {
+  body .mySlides .image .bg-image {
+    right: 2px;
+    top: 24%;
+  }
+}
+body .mySlides .image .emp-img1, body .mySlides .image .emp-img2 {
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 12px 43px 45px -42px;
+  width: 100%;
+  height: 100%;
+}
+body .mySlides .slider-button {
+  border: none;
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+  position: absolute;
+  bottom: -25px;
+  border-radius: 2rem;
+  left: 53%;
+}
+@media screen and (max-width: 426px) {
+  body .mySlides .slider-button {
+    bottom: 268px;
+    left: 40%;
+    gap: 0;
+  }
+}
+body .mySlides .slider-button .btn-prev,
+body .mySlides .slider-button .btn-next {
+  cursor: pointer;
+  padding: 1rem;
+}
+body .mySlides .slider-button .btn-prev svg,
+body .mySlides .slider-button .btn-next svg {
+  vertical-align: middle;
+}
+@media screen and (max-width: 426px) {
+  body .mySlides .slider-button .btn-prev,
+  body .mySlides .slider-button .btn-next {
+    padding: 0.5rem 1rem;
+  }
+}
+body .mySlides .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
